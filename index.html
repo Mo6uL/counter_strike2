@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike 2 — Přehled a Kvíz</title>
+    <meta name="description" content="Kompletní průvodce hrou Counter-Strike 2.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">CS2 Info</div>
+            <ul class="nav-links">
+                <li><a href="#about">O hře</a></li>
+                <li><a href="#weapons">Zbraně</a></li>
+                <li><a href="#facts">Fakta</a></li>
+                <li><a href="#faq">Otázky</a></li>
+                <li><a href="#quiz">Kvíz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Counter-Strike 2</h1>
+            <p>Největší technický skok v historii legendární série od Valve.</p>
+        </section>
+
+        <section id="about">
+            <h2>Stručné vysvětlení hratelnosti</h2>
+            <p>Counter-Strike 2 (CS2) je taktická FPS střílečka, kde proti sobě soupeří Teroristé (T) a Protiteroristé (CT). Cílem T je položit C4, zatímco CT jim v tom brání nebo nálož zneškodňují. Vyhrává tým, který první získá 13 kol.</p>
+        </section>
+
+        <section id="weapons">
+            <h2>Přehled populárních zbraní</h2>
+            <div class="filter-buttons">
+                <button class="btn active" onclick="filterWeapons('all', event)">Všechny</button>
+                <button class="btn" onclick="filterWeapons('rifle', event)">Pušky</button>
+                <button class="btn" onclick="filterWeapons('sniper', event)">Odstřelovačky</button>
+                <button class="btn" onclick="filterWeapons('pistol', event)">Pistole</button>
+            </div>
+
+            <div class="grid-container">
+                <div class="card weapon-item rifle">
+                    <h3>AK-47</h3>
+                    <p>Útočná puška T týmu. Vysoké poškození a zabití na jednu ránu do hlavy.</p>
+                </div>
+                <div class="card weapon-item rifle">
+                    <h3>M4A1-S / M4A4</h3>
+                    <p>Hlavní pušky CT týmu. Nabízejí vysokou přesnost a kontrolovatelný zpětný ráz.</p>
+                </div>
+                <div class="card weapon-item sniper">
+                    <h3>AWP</h3>
+                    <p>Silná odstřelovací puška. Zásah do trupu nebo hlavy znamená okamžité vyřazení.</p>
+                </div>
+                <div class="card weapon-item pistol">
+                    <h3>Desert Eagle</h3>
+                    <p>Sekundární zbraň s vysokým poškozením na jeden výstřel do hlavy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="facts">
+            <h2>Zajímavosti a fakta o CS2</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80" alt="Source 2">
+                    <h3>Engine Source 2</h3>
+                    <p>Přináší lepší grafiku, fyziku a dynamické dýmovnice reagující na výbuchy a střelbu.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80" alt="Sub-Tick">
+                    <h3>Sub-Tick Systém</h3>
+                    <p>Přesně zaznamenává okamžik výstřelu nebo skoku bez ohledu na tickrate serveru.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=600&q=80" alt="Skiny">
+                    <h3>Ekonomika skinů</h3>
+                    <p>Všechny skiny z CS:GO byly převedeny do CS2, přičemž některé mají hodnotu tisíců dolarů.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Často kladené otázky (FAQ)</h2>
+            <div class="faq-item">
+                <button class="faq-question">Je hra CS2 zdarma? <span>+</span></button>
+                <div class="faq-answer"><p>Ano, CS2 je free-to-play hra dostupná na platformě Steam.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Jaký je rozdíl oproti CS:GO? <span>+</span></button>
+                <div class="faq-answer"><p>Nový engine Source 2, předělaná grafika, vylepšené dýmovnice a sub-tick systém.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Jaké jsou nejznámější mapy? <span>+</span></button>
+                <div class="faq-answer"><p>Mirage, Inferno, Dust II, Nuke nebo Ancient.</p></div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2>Kvíz</h2>
+            <form id="cs2-quiz">
+                <p><strong>1. Kolik vítězných kol je potřeba k výhře v zápasu CS2?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q1" value="10"> 10 kol</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="13"> 13 kol</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="16"> 16 kol</label>
+
+                <p style="margin-top: 1rem;"><strong>2. Který engine pohání CS2?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q2" value="unreal"> Unreal Engine 5</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="source2"> Source 2</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="unity"> Unity</label>
+
+                <button type="submit" class="btn" style="margin-top: 1rem;">Vyhodnotit kvíz</button>
+            </form>
+            <div id="quiz-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;:> school project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
